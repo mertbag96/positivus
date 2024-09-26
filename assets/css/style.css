@@ -69,4 +69,64 @@ header .menu .menu-item .menu-button {
   font-size: 18px;
   color: #191A23;
 }
+
+/* Hero */
+.hero {
+  height: calc(100dvh - 148px);
+  padding-top: 10px;
+}
+.hero .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hero .content div:first-child {
+  width: 532px;
+}
+.hero .content div h1 {
+  margin-bottom: 1.5rem;
+  font-size: 58px;
+  color: #191A23;
+}
+.hero .content div p {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  color: #191A23;
+}
+.hero .content div a {
+  background-color: #191A23;
+  border: 1px solid #191A23;
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  color: #F3F3F3;
+}
+.hero .content div img {
+  width: 600px;
+  height: 515px;
+}
+.hero .partners {
+  padding: 5.25rem 0 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .partners .partner {
+  width: 128px;
+  height: 48px;
+}
+.hero .partners .partner img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.25s ease;
+}
+.hero .partners .partner img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
 /*# sourceMappingURL=style.css.map */
