@@ -36,4 +36,37 @@ ul, ol {
   padding-left: 0;
   padding-right: 0;
 }
+
+/* Header */
+header {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  width: 172px;
+  height: 28px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+}
+header .menu .menu-item {
+  margin-right: 40px;
+}
+header .menu .menu-item:last-child {
+  margin-right: 0;
+}
+header .menu .menu-item .menu-link {
+  font-size: 18px;
+  color: #191A23;
+}
+header .menu .menu-item .menu-button {
+  border: 1px solid #191A23;
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  color: #191A23;
+}
 /*# sourceMappingURL=style.css.map */

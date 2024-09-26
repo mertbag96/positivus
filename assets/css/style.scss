@@ -41,3 +41,38 @@ ul, ol {
     padding-left: 0;
     padding-right: 0;
 }
+
+/* Header */
+header {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        img {
+            width: 172px;
+            height: 28px;
+        }
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        .menu-item {
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+            .menu-link {
+                font-size: 18px;
+                color: $color2;
+            }
+            .menu-button {
+                border: 1px solid $color2;
+                border-radius: 14px;
+                padding: 1rem 2rem;
+                font-size: 18px;
+                color: $color2;
+            }
+        }
+    }
+}
