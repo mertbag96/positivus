@@ -453,10 +453,10 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
     crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $("#processes .accordion-item").on("click", function () {
-            const isActive = $(this).hasClass('active');
+        $("#processes .accordion-item .accordion-header").on("click", function () {
+            const isActive = $(this).parent().hasClass('active');
             $("#processes .accordion-item").removeClass('active');
-            $(this).toggleClass('active', !isActive);
+            $(this).parent().toggleClass('active', !isActive);
         });
     </script>
 
