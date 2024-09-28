@@ -355,3 +355,103 @@ header {
         }
     }
 }
+
+/* Our Working Process */
+.our-working-process {
+    margin-bottom: 110px;
+    .title {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        h2 {
+            background-color: $color1;
+            border-radius: .5rem;
+            margin: 0 40px 0 0;
+            padding: 0 .5rem;
+            font-weight: 500;
+            color: $color2;
+        }
+        p {
+            margin: 0;
+            width: 292px;
+        }
+    }
+    .accordion {
+        .accordion-item {
+            box-shadow: 0 5px 0 0 #191A23;
+            border: 1px solid $color2;
+            border-radius: 45px;
+            margin-bottom: 30px;
+            .accordion-header {
+                border-radius: 45px;
+                padding: 0;
+                .accordion-button {
+                    background-color: transparent !important;
+                    box-shadow: none;
+                    border-radius: 45px;
+                    padding: 40px 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .accordion-button-content {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            margin-right: 1.5rem;
+                            font-weight: 500;
+                            font-size: 5rem;
+                            color: $color2;
+                        }
+                        font-weight: 500;
+                        font-size: 2.5rem;
+                        color: $color2;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                    .accordion-button-toggle {
+                        border: 1px solid $color2;
+                        border-radius: 50%;
+                        width: 58px;
+                        height: 58px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .minus {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .accordion-collapse {
+                border-radius: 45px;
+                .accordion-body {
+                    padding: 0 60px 40px 60px;
+                    div {
+                        border-top: 1px solid $color2;
+                        p {
+                            margin: 40px 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+        .active {
+            background-color: $color1;
+            .accordion-header {
+                .accordion-button {
+                    .accordion-button-toggle {
+                        .minus {
+                            display: block;
+                        }
+                        .plus {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
