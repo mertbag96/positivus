@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 /* Colors */
 /* Global */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -21,7 +23,8 @@ a {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,45 +47,53 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header .logo img {
   width: 172px;
   height: 28px;
 }
+
 header .menu {
   display: flex;
   align-items: center;
 }
+
 header .menu .menu-item {
   margin-right: 1.5rem;
 }
+
 header .menu .menu-item:last-child {
   margin-right: 0;
 }
+
 header .menu .menu-item .menu-link {
   border: 1px solid white;
   border-radius: 14px;
   padding: 1rem;
   font-size: 18px;
-  color: #191A23;
+  color: #191a23;
   transition: 0.25s ease;
 }
+
 header .menu .menu-item .menu-link:hover {
-  background-color: #B9FF66;
-  border-color: #191A23;
-  color: #191A23;
+  background-color: #b9ff66;
+  border-color: #191a23;
+  color: #191a23;
 }
+
 header .menu .menu-item .menu-button {
-  border: 1px solid #191A23;
-  background-color: #191A23;
+  border: 1px solid #191a23;
+  background-color: #191a23;
   border-radius: 14px;
   padding: 1rem 2rem;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #f3f3f3;
   transition: 0.25s ease;
 }
+
 header .menu .menu-item .menu-button:hover {
-  background-color: #B9FF66;
-  color: #191A23;
+  background-color: #b9ff66;
+  color: #191a23;
 }
 
 /* Hero */
@@ -90,41 +101,49 @@ header .menu .menu-item .menu-button:hover {
   height: calc(100dvh - 148px);
   padding-top: 10px;
 }
+
 .hero .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .hero .content div:first-child {
   width: 532px;
 }
+
 .hero .content div h1 {
   margin-bottom: 1.5rem;
   font-size: 58px;
-  color: #191A23;
+  color: #191a23;
 }
+
 .hero .content div p {
   margin-bottom: 3rem;
   font-size: 1.5rem;
-  color: #191A23;
+  color: #191a23;
 }
+
 .hero .content div a {
-  background-color: #191A23;
-  border: 1px solid #191A23;
+  background-color: #191a23;
+  border: 1px solid #191a23;
   border-radius: 14px;
   padding: 1rem 2rem;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #f3f3f3;
   transition: 0.25s ease;
 }
+
 .hero .content div a:hover {
-  background-color: #B9FF66;
-  color: #191A23;
+  background-color: #b9ff66;
+  color: #191a23;
 }
+
 .hero .content div img {
   width: 600px;
   height: 515px;
 }
+
 .hero .partners {
   padding: 5.25rem 0 5rem 0;
   display: flex;
@@ -132,19 +151,19 @@ header .menu .menu-item .menu-button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .hero .partners .partner {
   width: 128px;
   height: 48px;
 }
+
 .hero .partners .partner img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+  user-select: none;
+  object-fit: cover;
   filter: grayscale(1);
   transition: 0.25s ease;
 }
+
 .hero .partners .partner img:hover {
   transform: scale(1.05);
   filter: grayscale(0);
@@ -155,32 +174,37 @@ header .menu .menu-item .menu-button:hover {
   padding: 4.25rem 0 5rem 0;
   margin-bottom: 100px;
 }
+
 .services .title {
   margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .services .title h2 {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
   border-radius: 0.5rem;
   margin: 0 40px 0 0;
   padding: 0 0.5rem;
-  font-weight: 500;
-  color: #191A23;
+  font-weight: 600;
+  color: #191a23;
 }
+
 .services .title p {
   margin: 0;
   width: 580px;
 }
+
 .services .cards {
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
+
 .services .cards .card {
-  box-shadow: 0 5px 0 0 #191A23;
-  border: 1px solid #191A23;
+  box-shadow: 0 5px 0 0 #191a23;
+  border: 1px solid #191a23;
   border-radius: 40px;
   padding: 50px;
   height: 310px;
@@ -189,42 +213,49 @@ header .menu .menu-item .menu-button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .services .cards .card:nth-of-type(1), .services .cards .card:nth-of-type(4) {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
+
 .services .cards .card:nth-of-type(2), .services .cards .card:nth-of-type(5) {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
 }
+
 .services .cards .card:nth-of-type(3), .services .cards .card:nth-of-type(6) {
-  background-color: #191A23;
+  background-color: #191a23;
 }
+
 .services .cards .card .card-content {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .services .cards .card .card-content div h3 {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
   border-radius: 0.5rem;
   margin: 0;
   padding: 0 0.5rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
 }
+
 .services .cards .card .card-content a {
   display: flex;
   align-items: center;
   font-size: 1.25rem;
-  color: #191A23;
+  color: #191a23;
 }
+
 .services .cards .card .card-content a:hover {
   text-decoration: underline;
 }
+
 .services .cards .card .card-content a:hover span {
   transform: rotate(30deg);
 }
+
 .services .cards .card .card-content a span {
   margin-right: 1rem;
   border-radius: 50%;
@@ -235,9 +266,11 @@ header .menu .menu-item .menu-button:hover {
   align-items: center;
   transition: 0.35s ease;
 }
+
 .services .cards .card .card-content a .circle-black {
-  background-color: #191A23;
+  background-color: #191a23;
 }
+
 .services .cards .card .card-image {
   height: 100%;
   display: flex;
@@ -247,7 +280,7 @@ header .menu .menu-item .menu-button:hover {
 
 /* Call to Action Card */
 .cta-card {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border-radius: 45px;
   margin-bottom: 140px;
   position: relative;
@@ -256,27 +289,32 @@ header .menu .menu-item .menu-button:hover {
   display: flex;
   align-items: center;
 }
+
 .cta-card div h4 {
   margin-bottom: 1.5rem;
-  color: #191A23;
+  color: #191a23;
 }
+
 .cta-card div p {
   margin-bottom: 2.25rem;
   width: 500px;
 }
+
 .cta-card div a {
-  background-color: #191A23;
-  border: 1px solid #191A23;
+  background-color: #191a23;
+  border: 1px solid #191a23;
   border-radius: 14px;
   padding: 1rem 2rem;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #f3f3f3;
   transition: 0.25s ease;
 }
+
 .cta-card div a:hover {
-  background-color: #B9FF66;
-  color: #191A23;
+  background-color: #b9ff66;
+  color: #191a23;
 }
+
 .cta-card div img {
   position: absolute;
   right: 60px;
@@ -287,56 +325,67 @@ header .menu .menu-item .menu-button:hover {
 .case-studies {
   margin-bottom: 140px;
 }
+
 .case-studies .title {
   margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .case-studies .title h2 {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
   border-radius: 0.5rem;
   margin: 0 40px 0 0;
   padding: 0 0.5rem;
-  font-weight: 500;
-  color: #191A23;
+  font-weight: 600;
+  color: #191a23;
 }
+
 .case-studies .title p {
   margin: 0;
   width: 580px;
 }
+
 .case-studies .case-studies-card {
-  background-color: #191A23;
+  background-color: #191a23;
   border-radius: 45px;
   padding: 70px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .case-studies .case-studies-card div {
   width: 286px;
 }
+
 .case-studies .case-studies-card div p {
   margin-bottom: 1rem;
   color: white;
 }
+
 .case-studies .case-studies-card div a {
   display: flex;
   align-items: center;
-  color: #B9FF66;
+  color: #b9ff66;
 }
+
 .case-studies .case-studies-card div a:hover {
   text-decoration: underline;
 }
+
 .case-studies .case-studies-card div a:hover img {
   transform: rotate(30deg);
 }
+
 .case-studies .case-studies-card div a img {
   margin-left: 1rem;
   width: 1rem;
   height: 1rem;
   transition: 0.35s ease;
 }
+
 .case-studies .case-studies-card hr {
   border: 1px solid white;
   width: 186px;
@@ -348,34 +397,40 @@ header .menu .menu-item .menu-button:hover {
 .our-working-process {
   margin-bottom: 110px;
 }
+
 .our-working-process .title {
   margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .our-working-process .title h2 {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
   border-radius: 0.5rem;
   margin: 0 40px 0 0;
   padding: 0 0.5rem;
-  font-weight: 500;
-  color: #191A23;
+  font-weight: 600;
+  color: #191a23;
 }
+
 .our-working-process .title p {
   margin: 0;
   width: 292px;
 }
+
 .our-working-process .accordion .accordion-item {
-  box-shadow: 0 5px 0 0 #191A23;
-  border: 1px solid #191A23;
+  box-shadow: 0 5px 0 0 #191a23;
+  border: 1px solid #191a23;
   border-radius: 45px;
   margin-bottom: 30px;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header {
   border-radius: 45px;
   padding: 0;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header .accordion-button {
   background-color: transparent !important;
   box-shadow: none;
@@ -385,25 +440,29 @@ header .menu .menu-item .menu-button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header .accordion-button .accordion-button-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
   font-size: 2.5rem;
-  color: #191A23;
+  color: #191a23;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header .accordion-button .accordion-button-content span {
   margin-right: 1.5rem;
   font-weight: 500;
   font-size: 5rem;
-  color: #191A23;
+  color: #191a23;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header .accordion-button::after {
   display: none;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header .accordion-button .accordion-button-toggle {
-  border: 1px solid #191A23;
+  border: 1px solid #191a23;
   border-radius: 50%;
   width: 58px;
   height: 58px;
@@ -411,28 +470,144 @@ header .menu .menu-item .menu-button:hover {
   justify-content: center;
   align-items: center;
 }
+
 .our-working-process .accordion .accordion-item .accordion-header .accordion-button .accordion-button-toggle .minus {
   display: none;
 }
+
 .our-working-process .accordion .accordion-item .accordion-collapse {
   border-radius: 45px;
 }
+
 .our-working-process .accordion .accordion-item .accordion-collapse .accordion-body {
   padding: 0 60px 40px 60px;
 }
+
 .our-working-process .accordion .accordion-item .accordion-collapse .accordion-body div {
-  border-top: 1px solid #191A23;
+  border-top: 1px solid #191a23;
 }
+
 .our-working-process .accordion .accordion-item .accordion-collapse .accordion-body div p {
   margin: 40px 0 0 0;
 }
+
 .our-working-process .accordion .active {
-  background-color: #B9FF66;
+  background-color: #b9ff66;
 }
+
 .our-working-process .accordion .active .accordion-header .accordion-button .accordion-button-toggle .minus {
   display: block;
 }
+
 .our-working-process .accordion .active .accordion-header .accordion-button .accordion-button-toggle .plus {
   display: none;
 }
-/*# sourceMappingURL=style.css.map */
+
+/* Team */
+.team {
+  margin-bottom: 100px;
+}
+
+.team .title {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.team .title h2 {
+  background-color: #b9ff66;
+  border-radius: 0.5rem;
+  margin: 0 40px 0 0;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  color: #191a23;
+}
+
+.team .title p {
+  margin: 0;
+  width: 473px;
+}
+
+.team .members {
+  margin-bottom: 2.5rem;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.team .members .member-card {
+  box-shadow: 0 5px 0 0 #191a23;
+  border: 1px solid #191a23;
+  border-radius: 45px;
+  padding: 40px 35px;
+}
+
+.team .members .member-card .member-information {
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.team .members .member-card .member-information .member-photo {
+  margin-right: 20px;
+  width: 96px;
+  height: 96px;
+}
+
+.team .members .member-card .member-information .member-detail {
+  width: 100%;
+}
+
+.team .members .member-card .member-information .member-detail a {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 32;
+  height: 32px;
+}
+
+.team .members .member-card .member-information .member-detail a .member-social {
+  width: 32;
+  height: 32px;
+}
+
+.team .members .member-card .member-information .member-detail .member h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.team .members .member-card .member-information .member-detail .member p {
+  margin: 0;
+}
+
+.team .members .member-card .member-description {
+  border-top: 1px solid #191a23;
+}
+
+.team .members .member-card .member-description p {
+  margin: 1.5rem 0 0 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #191a23;
+}
+
+.team .see-team {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.team .see-team a {
+  background-color: #191a23;
+  border: 1px solid #191a23;
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  color: #f3f3f3;
+  transition: 0.25s ease;
+}
+
+.team .see-team a:hover {
+  background-color: #b9ff66;
+  color: #191a23;
+}
