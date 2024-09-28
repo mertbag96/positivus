@@ -159,6 +159,7 @@ header {
 /* Services */
 .services {
     padding: 4.25rem 0 5rem 0;
+    margin-bottom: 100px;
     .title {
         margin-bottom: 5rem;
         display: flex;
@@ -249,6 +250,47 @@ header {
                 justify-content: center;
                 align-items: center;
             }
+        }
+    }
+}
+
+/* Call to Action Card */
+.cta-card {
+    background-color: $color3;
+    border-radius: 45px;
+    margin-bottom: 100px;
+    position: relative;
+    padding: 60px;
+    height: 347px;
+    display: flex;
+    align-items: center;
+    div {
+        
+        h4 {
+            margin-bottom: 1.5rem;
+            color: $color2;
+        }
+        p {
+            margin-bottom: 2.25rem;
+            width: 500px;
+        }
+        a {
+            background-color: $color2;
+            border: 1px solid $color2;
+            border-radius: 14px;
+            padding: 1rem 2rem;
+            font-size: 18px;
+            color: $color3;
+            transition: .25s ease;
+            &:hover {
+                background-color: $color1;
+                color: $color2;
+            }
+        }
+        img {
+            position: absolute;
+            right: 60px;
+            top: -24px;
         }
     }
 }

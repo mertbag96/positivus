@@ -153,6 +153,7 @@ header .menu .menu-item .menu-button:hover {
 /* Services */
 .services {
   padding: 4.25rem 0 5rem 0;
+  margin-bottom: 100px;
 }
 .services .title {
   margin-bottom: 5rem;
@@ -242,5 +243,43 @@ header .menu .menu-item .menu-button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Call to Action Card */
+.cta-card {
+  background-color: #F3F3F3;
+  border-radius: 45px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 60px;
+  height: 347px;
+  display: flex;
+  align-items: center;
+}
+.cta-card div h4 {
+  margin-bottom: 1.5rem;
+  color: #191A23;
+}
+.cta-card div p {
+  margin-bottom: 2.25rem;
+  width: 500px;
+}
+.cta-card div a {
+  background-color: #191A23;
+  border: 1px solid #191A23;
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  color: #F3F3F3;
+  transition: 0.25s ease;
+}
+.cta-card div a:hover {
+  background-color: #B9FF66;
+  color: #191A23;
+}
+.cta-card div img {
+  position: absolute;
+  right: 60px;
+  top: -24px;
 }
 /*# sourceMappingURL=style.css.map */
