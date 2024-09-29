@@ -9,6 +9,10 @@
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="container-fluid">
@@ -593,6 +597,102 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="container testimonials">
+        <div class="title">
+            <h2>Testimonials</h2>
+            <p>
+                Hear from Our Satisfied Clients: Read Our Testimonials to 
+                Learn More about Our Digital Marketing Services
+            </p>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <div class="bubble">
+                    <p>
+                        "We have been working with Positivus for the past year and have seen a significant 
+                        increase in website traffic and leads as a result of their efforts. The team is 
+                        professional, responsive, and truly cares about the success of our business. We highly 
+                        recommend Positivus to any company looking to grow their online presence."
+                    </p>
+                </div>
+                <div class="commentor">
+                    <p>Emma Saunders</p>
+                    <span>Marketing Director at Horizon Tech</span>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="bubble">
+                    <p>
+                        "Partnering with Positivus has been one of the best decisions for our business. In just a 
+                        few months, we noticed a significant boost in our online visibility and lead generation. 
+                        Their team is not only knowledgeable but also highly responsive to our needs."
+                    </p>
+                </div>
+                <div class="commentor">
+                    <p>Liam Bradford</p>
+                    <span>Chief Operations Officer at Apex Solutions</span>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="bubble">
+                    <p>
+                        "Since we started collaborating with Positivus, our online traffic has seen a remarkable rise, 
+                        and our lead generation has vastly improved. Their team is efficient, always available, and 
+                        incredibly focused on helping us meet our business objectives. We highly recommend them for 
+                        any business aiming to enhance their digital marketing efforts."
+                    </p>
+                </div>
+                <div class="commentor">
+                    <p>Olivia Hartman</p>
+                    <span>Head of Digital Marketing at InnovateX</span>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="bubble">
+                    <p>
+                        "The Positivus team has been instrumental in driving more traffic and leads to our website. 
+                        Over the past year, their strategies have brought measurable improvements to our online presence. 
+                        Their professionalism, dedication, and expertise make them a valuable partner. I strongly 
+                        encourage any company to work with Positivus for their digital marketing needs."
+                    </p>
+                </div>
+                <div class="commentor">
+                    <p>Noah Pearson</p>
+                    <span>Founder & CEO at BrightEdge Ventures</span>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="bubble">
+                    <p>
+                        "Positivus has been pivotal in helping us reach new levels of success online. Their 
+                        strategic approach has resulted in noticeable growth in website traffic and lead generation. 
+                        They are a responsive and insightful team, always focused on helping us achieve our goals. 
+                        We recommend them to any company seeking a strong digital marketing partner."
+                    </p>
+                </div>
+                <div class="commentor">
+                    <p>Sophia Montgomery</p>
+                    <span>E-commerce Manager at Stellar Brands</span>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="bubble">
+                    <p>
+                        "Since engaging with Positivus, we have experienced a tremendous increase in both website 
+                        traffic and quality leads. Their team is proactive, supportive, and committed to delivering 
+                        results that align with our business objectives. If you're serious about growing your online 
+                        presence, Positivus is the partner you need."
+                    </p>
+                </div>
+                <div class="commentor">
+                    <p>James Fletcher</p>
+                    <span>Business Development Manager at Orion Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
@@ -600,11 +700,19 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript">
         $("#processes .accordion-item .accordion-header").on("click", function () {
             const isActive = $(this).parent().hasClass('active');
             $("#processes .accordion-item").removeClass('active');
             $(this).parent().toggleClass('active', !isActive);
+        });
+        $('.comments').slick({
+            dots: true,
+            infinite: false,
+            speed: 750,
+            slidesToShow: 2,
+            slidesToScroll: 1,     
         });
     </script>
 
