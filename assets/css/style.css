@@ -813,7 +813,10 @@ header .menu .menu-item .menu-button:hover {
 }
 
 .contact-us .contact-form .forms .switch-form div input {
+  width: 28px;
+  height: 28px;
   cursor: pointer;
+  accent-color: #b9ff66;
 }
 
 .contact-us .contact-form .forms .switch-form div label {
@@ -876,4 +879,144 @@ header .menu .menu-item .menu-button:hover {
 .contact-us .contact-form img {
   position: absolute;
   right: -325px;
+}
+
+/* Footer */
+footer {
+  background-color: #191a23;
+  border-radius: 45px 45px 0 0;
+  padding: 50px 60px !important;
+}
+
+footer .top {
+  margin-bottom: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top .menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .top .menu li {
+  margin-right: 2.5rem;
+}
+
+footer .top .menu li:last-child {
+  margin-right: 0;
+}
+
+footer .top .menu li a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .top .socials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .top .socials li {
+  margin-right: 20px;
+}
+
+footer .top .socials li:last-child {
+  margin-right: 0;
+}
+
+footer .top .socials li a {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+footer .middle {
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .middle .details h6 {
+  background-color: #b9ff66;
+  border-radius: 7px;
+  padding: .2rem .5rem;
+  margin-bottom: 27px;
+  width: max-content;
+  font-size: 500;
+  color: #191a23;
+}
+
+footer .middle .details p {
+  margin-bottom: 1.25rem;
+  color: white;
+}
+
+footer .middle .newsletter {
+  background-color: #292A32;
+  border-radius: 14px;
+  padding: 58px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .middle .newsletter form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .middle .newsletter form input {
+  background-color: #292A32;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 14px;
+  margin-right: 20px;
+  padding: 22px 35px;
+  width: 250px;
+  font-size: 18px;
+  color: white;
+}
+
+footer .middle .newsletter form input::placeholder {
+  font-size: 18px;
+  color: white;
+}
+
+footer .middle .newsletter form button {
+  background-color: #b9ff66;
+  border-radius: 14px;
+  padding: 22px 35px;
+  width: 250px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #191a23;
+}
+
+footer .bottom {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+footer .bottom p {
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+
+footer .bottom a {
+  margin-left: 40px;
+  font-size: 18px;
+  color: white;
+  text-decoration: underline;
 }

@@ -723,7 +723,10 @@ header {
           display: flex;
           align-items: center;
           input {
+            width: 28px;
+            height: 28px;
             cursor: pointer;
+            accent-color: $color1;
           }
           label {
             margin: 2px 0 0 .5rem;
@@ -780,6 +783,128 @@ header {
     img {
       position: absolute;
       right: -325px;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  background-color: $color2;
+  border-radius: 45px 45px 0 0;
+  padding: 50px 60px !important;
+  .top {
+    margin-bottom: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 2.5rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+    .socials {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .middle {
+    border-bottom: 1px solid $color3;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .details {
+      h6 {
+        background-color: $color1;
+        border-radius: 7px;
+        padding: .2rem .5rem;
+        margin-bottom: 27px;
+        width: max-content;
+        font-size: 500;
+        color: $color2;
+      }
+      p {
+        margin-bottom: 1.25rem;
+        color: white;
+      }
+    }
+    .newsletter {
+      background-color: #292A32;
+      border-radius: 14px;
+      padding: 58px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+          background-color: #292A32;
+          border: 1px solid white;
+          outline: none;
+          border-radius: 14px;
+          margin-right: 20px;
+          padding: 22px 35px;
+          width: 250px;
+          font-size: 18px;
+          color: white;
+          &::placeholder {
+            font-size: 18px;
+            color: white;
+          }
+        }
+        button {
+          background-color: $color1;
+          border-radius: 14px;
+          padding: 22px 35px;
+          width: 250px;
+          font-weight: 500;
+          font-size: 18px;
+          color: $color2;
+        }
+      }
+    }
+  }
+  .bottom {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+    a {
+      margin-left: 40px;
+      font-size: 18px;
+      color: white;
+      text-decoration: underline;
     }
   }
 }
