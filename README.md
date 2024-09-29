@@ -1,6 +1,6 @@
 # Positivus
 
-Positivus is a free website landing page designed by Olga Skuja.
+Positivus is a free website landing page designed by [Olga Skuja](https://www.olgaskuja.design).
 
 ![alt text](https://github.com/mertbag96/positivus/blob/main/project.JPG)
 
