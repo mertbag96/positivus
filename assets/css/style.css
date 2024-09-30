@@ -43,8 +43,10 @@ ol {
 
 /* Header */
 header {
+  position: relative;
   padding: 60px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -95,6 +97,68 @@ header .menu .menu-item .menu-button {
 header .menu .menu-item .menu-button:hover {
   background-color: #b9ff66;
   color: #191a23;
+}
+
+header .hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+header #mobile-menu {
+  padding: 1rem;
+  max-width: 280px;
+}
+
+header #mobile-menu .offcanvas-header {
+  margin-bottom: 1rem;
+}
+
+header #mobile-menu .offcanvas-header .offcanvas-title {
+  font-weight: 600;
+}
+
+header #mobile-menu .offcanvas-header .btn-close,
+header #mobile-menu .offcanvas-header .btn-close:hover,
+header #mobile-menu .offcanvas-header .btn-close:focus {
+  box-shadow: none;
+  color: #191a23;
+  opacity: 1;
+}
+
+header #mobile-menu .offcanvas-body ul li {
+  margin-bottom: 1rem;
+}
+
+header #mobile-menu .offcanvas-body ul li a {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  font-family: 500;
+  color: #191a23;
+}
+
+header #mobile-menu .offcanvas-body ul li a:hover {
+  color: #191a23;
+  text-decoration: underline;
+}
+
+header #mobile-menu .offcanvas-body ul li .mobile-menu-button {
+  border: 1px solid #191a23;
+  background-color: #191a23;
+  border-radius: 14px;
+  padding: .5rem 1rem;
+  width: min-content;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  transition: .25s ease;
+}
+
+header #mobile-menu .offcanvas-body ul li .mobile-menu-button:hover {
+  background-color: #b9ff66;
+  color: #191a23;
+  text-decoration: none;
 }
 
 /* Hero */
@@ -159,6 +223,7 @@ header .menu .menu-item .menu-button:hover {
 }
 
 .hero .partners .partner img {
+  -webkit-user-select: none;
   user-select: none;
   object-fit: cover;
   filter: grayscale(1);
@@ -823,6 +888,7 @@ header .menu .menu-item .menu-button:hover {
   margin: 2px 0 0 .5rem;
   font-weight: 500;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -1019,4 +1085,28 @@ footer .bottom a {
   font-size: 18px;
   color: white;
   text-decoration: underline;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1199px) {
+  /* Header */
+  header {
+    padding: 40px 0;
+  }
+  header .menu {
+    display: none;
+  }
+  header .hamburger-menu {
+    display: flex;
+  }
+  header .mobile-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  /* Bootstrap */
+  .container {
+    max-width: 92%;
+  }
 }

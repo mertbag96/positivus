@@ -48,8 +48,10 @@ ol {
 
 /* Header */
 header {
+  position: relative;
   padding: 60px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   .logo {
@@ -90,6 +92,62 @@ header {
         &:hover {
           background-color: $color1;
           color: $color2;
+        }
+      }
+    }
+  }
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  #mobile-menu {
+    padding: 1rem;
+    max-width: 280px;
+    .offcanvas-header {
+      margin-bottom: 1rem;
+      .offcanvas-title {
+        font-weight: 600;
+      }
+      .btn-close,
+      .btn-close:hover,
+      .btn-close:focus {
+        box-shadow: none;
+        color: $color2;
+        opacity: 1;
+      }
+    }
+    .offcanvas-body {
+      ul {
+        li {
+          margin-bottom: 1rem;
+          a {
+            background-color: transparent;
+            border-radius: 0;
+            border: 0;
+            padding: 0;
+            font-family: 500;
+            color: $color2;
+            &:hover {
+              color: $color2;
+              text-decoration: underline;
+            }
+          }
+          .mobile-menu-button {
+            border: 1px solid $color2;
+            background-color: $color2;
+            border-radius: 14px;
+            padding: .5rem 1rem;
+            width: min-content;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+            transition: .25s ease;
+            &:hover {
+              background-color: $color1;
+              color: $color2;
+              text-decoration: none;
+            }
+          }
         }
       }
     }
@@ -147,6 +205,7 @@ header {
       width: 128px;
       height: 48px;
       img {
+        -webkit-user-select: none;
         user-select: none;
         object-fit: cover;
         filter: grayscale(1);
@@ -732,6 +791,7 @@ header {
             margin: 2px 0 0 .5rem;
             font-weight: 500;
             cursor: pointer;
+            -webkit-user-select: none;
             user-select: none;
           }
         }
@@ -906,5 +966,29 @@ footer {
       color: white;
       text-decoration: underline;
     }
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 1199px) {
+  /* Header */
+  header {
+    padding: 40px 0;
+    .menu {
+      display: none;
+    }
+    .hamburger-menu {
+      display: flex;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  /* Bootstrap */
+  .container {
+    max-width: 92%;
   }
 }
